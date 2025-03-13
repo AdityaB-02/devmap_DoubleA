@@ -1,5 +1,12 @@
 # DEVMAP Event
-# Team Name
+## Team Name
 DoubleA
--[Members](#Aditya B (DEV),#Alok J (DEV))
--[TechStack used](#React, #html, #CSS, #Javascript, #Next.js)
+## Members
+-Aditya B (DEV)
+-Alok J (DEV)
+## TechStack used
+*React
+*html
+*CSS
+*Javascript
+*Next.js
