@@ -1,9 +1,9 @@
-# DEVMAP Event
+# *DEVMAP Event*
 ## Team Name
-DoubleA
+***DoubleA***
 ## Members
-- Aditya B (DEV)
-- Alok J (DEV)
+- **Aditya B** (*DEV*)
+- **Alok J** (*DEV*)
 ## TechStack used
 * React
 * html
