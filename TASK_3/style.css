@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('kbc.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  body.success {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid #faee03;
+    border-radius: 13px;
+    background: linear-gradient(to right, #026ac5, #3d4cee, #1f009b);
+  }
+  body.success .container {
+    width: 400%;
+    max-width: 800px;
+    margin-bottom: 120px;;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    border: 3px solid #faee03;
+    border-radius: 13px;
+    background: linear-gradient(to right, #026ac5, #3d4cee, #1f009b);
+  }
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+  }
+  input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+    button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
