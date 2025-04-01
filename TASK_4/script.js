@@ -10,7 +10,7 @@ function calculate() {
         document.getElementById("result").innerText = "Error: Invalid Expression";
     }
 }
-
+//Enter key event listener
 document.getElementById('expression').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
       calculate();
