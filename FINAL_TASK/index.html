@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-b from-blue-100 to-blue-400 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-yellow-200 rounded-2xl shadow-lg w-full max-w-md p-6 space-y-4">
+    <h1 class="text-2xl font-semibold text-center">📝 TO-DO</h1>
+
+    <div class="flex gap-2">
+      <input id="taskInput" type="text" placeholder="Enter a task"
+             class="flex-1 p-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"/>
+      <button onclick="addTask()" class="bg-blue-500 text-white shadow-md px-4 py-2 rounded-lg hover:bg-blue-600">
+        Add
+      </button>
+    </div>
+
+    <div class="flex justify-between items-center text-sm flex-wrap gap-2">
+      <div class="space-x-1">
+        <button onclick="setFilter('all')" id="filter-all" class="px-2 py-1 rounded hover:bg-blue-100">All</button>
+        <button onclick="setFilter('completed')" id="filter-completed" class="px-2 py-1 rounded hover:bg-blue-100">Completed</button>
+        <button onclick="setFilter('pending')" id="filter-pending" class="px-2 py-1 rounded hover:bg-blue-100">Pending</button>
+      </div>
+      <button onclick="clearCompleted()" class="text-red-500 font-extrabold hover:underline">
+        Clear Completed
+      </button>
+    </div>
+
+    <ul id="taskList" class="space-y-2"></ul>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-lg w-full max-w-sm">
+      <h2 class="text-xl font-semibold mb-4">Edit Task</h2>
+      <input type="text" id="editInput" class="w-full p-2 border rounded mb-4" />
+      <div class="flex justify-end gap-2">
+        <button onclick="closeModal()" class="px-4 py-2 rounded bg-gray-300 hover:bg-gray-400">Cancel</button>
+        <button onclick="saveEdit()" class="px-4 py-2 rounded bg-blue-500 text-white hover:bg-blue-600">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
