@@ -97,7 +97,9 @@ function renderTasks() {
     const text = document.createElement("span");
     text.textContent = task.text;
     if (task.completed) {
-      text.className = "line-through text-gray-500";
+      text.className = "line-through text-gray-500 text-lg";
+    } else {
+      text.classList.add("text-lg");
     }
 
     left.appendChild(checkbox);
@@ -108,12 +110,12 @@ function renderTasks() {
 
     const edit = document.createElement("button");
     edit.textContent = "🖊️";
-    edit.className = "hover:text-blue-500";
+    edit.className = "hover:opacity-75 hover:scale-150 transition-transform duration-300";
     edit.onclick = () => openModal(index);
 
     const del = document.createElement("button");
     del.textContent = "❌";
-    del.className = "hover:text-red-500";
+    del.className = "hover:opacity-75 hover:scale-125 transition-transform duration-200";
     del.onclick = () => removeTask(index);
 
     buttons.appendChild(edit);
@@ -126,7 +128,7 @@ function renderTasks() {
 }
 
 window.onload = () => {
-  setFilter("all"); // Default filter on load
+  setFilter("all"); 
 };
 
 document.getElementById("taskInput").addEventListener('keydown', function(event) {
