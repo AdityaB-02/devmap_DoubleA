@@ -1,6 +1,6 @@
 .fade-enter {
   opacity: 0.1;                       
-  transform: translateY(15px);  
+  transform: translateY(200%);  
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;  
   will-change: opacity, transform;   
 }

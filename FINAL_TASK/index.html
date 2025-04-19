@@ -7,8 +7,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gradient-to-b from-blue-400 to-violet-600 min-h-screen flex items-center justify-center p-4">
-    <div class="bg-gradient-to-b from-yellow-200 to-yellow-500 rounded-2xl shadow-2xl w-full max-w-md p-6 space-y-4">
+<body class="bg-gradient-to-b from-blue-400 to-violet-600 min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="flex-grow bg-gradient-to-b from-yellow-200 to-yellow-500 rounded-2xl shadow-2xl w-full max-w-md p-6 space-y-4">
       <div class="flex justify-center items-center space-x-2">
         <span class="text-2xl">📝</span>
         <h1 class="text-2xl font-bold bg-gradient-to-br from-stone-600 to-stone-800 text-transparent bg-clip-text">
@@ -29,15 +29,15 @@
 
     <div class="flex justify-between items-center text-sm flex-wrap gap-2">
       <div class="space-x-1">
-        <button onclick="setFilter('all')" id="filter-all" class="px-2 py-1 rounded 
+        <button onclick="setFilter('all')" id="filter-all" class="px-2 py-1 rounded-xl 
                                                                   hover:bg-blue-100 
-                                                                  transition duration-300 ease-in-out">All</button>
-        <button onclick="setFilter('completed')" id="filter-completed" class="px-2 py-1 rounded 
+                                                                  transition duration-800 ease-in-out">All</button>
+        <button onclick="setFilter('completed')" id="filter-completed" class="px-2 py-1 rounded-xl 
                                                                               hover:bg-blue-100 
-                                                                              transition-transform duration-300 ease-in-out">Completed</button>
-        <button onclick="setFilter('pending')" id="filter-pending" class="px-2 py-1 rounded 
+                                                                              transition duration-800 ease-in-out">Completed</button>
+        <button onclick="setFilter('pending')" id="filter-pending" class="px-2 py-1 rounded-xl 
                                                                           hover:bg-blue-100 
-                                                                          transition duration-300 ease-in-out">Pending</button>
+                                                                          transition duration-800 ease-in-out">Pending</button>
       </div>
       <button 
       onclick="clearCompleted()" 
@@ -53,7 +53,7 @@
     <ul id="taskList" class="space-y-2"></ul>
   </div>
 
-    <span class="absolute bottom-2 right-2 text-sm font-semibold text-black-900">
+    <span class="self-end m-2 bottom-2 right-2 text-sm font-semibold text-black-900">
       *Better Viewed on Desktop*
     </span>
 
